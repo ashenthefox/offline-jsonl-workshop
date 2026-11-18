@@ -82,6 +82,14 @@ A [5-minute tutorial (TR/EN)](https://github.com/senanurcetin/offline-jsonl-work
 - **No published workshop ZIP.** The offline package is built locally; it is not attached to a GitHub release.
 - **Independent material.** This is not an official Anthropic product, partnership, certification or Anthropic-maintained repository, and no workshop, attendance, sponsorship or program acceptance is claimed.
 
+## Contributors
+
+Thanks to everyone who has improved this workshop:
+
+- [@P1LOTRX](https://github.com/P1LOTRX): clear errors for a UTF-8 BOM (#31) and for bare carriage returns (#32), released in v0.2.0.
+
+Want to join them? Issues labelled [good first issue](https://github.com/senanurcetin/offline-jsonl-workshop/issues?q=is%3Aopen+label%3A%22good+first+issue%22) have a reproduction and a definition of done, and questions are welcome in [Discussions](https://github.com/senanurcetin/offline-jsonl-workshop/discussions). See [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Türkçe
 
 Bayt sınırının neden Unicode karakter sayısıyla değil UTF-8 bayt sayısıyla kontrol edilmesi gerektiğini gösteren, bağımlılıksız ve çevrimdışı bir Python atölyesi.
