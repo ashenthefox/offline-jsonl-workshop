@@ -14,7 +14,7 @@ from typing import Any, BinaryIO
 
 # Keep in sync with [project].version in pyproject.toml (enforced by a unit test).
 # A constant, not importlib.metadata, so the script also works from a clone or ZIP.
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 DEFAULT_MAX_BYTES = 65_536
 UTF8_BOM = b"\xef\xbb\xbf"
