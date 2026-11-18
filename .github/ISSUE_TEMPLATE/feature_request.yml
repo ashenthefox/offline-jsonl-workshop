@@ -1,0 +1,24 @@
+name: Improvement idea
+description: Suggest a change to the validator, docs or workshop material.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is hard or unclear today? A short example helps.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Keep the project offline, dependency-free and privacy-safe (no record content in messages).
+    validations:
+      required: true
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution
+      options:
+        - label: I would like to open the pull request for this myself.
