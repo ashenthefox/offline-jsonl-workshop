@@ -98,8 +98,8 @@ A [5-minute tutorial (TR/EN)](https://github.com/senanurcetin/offline-jsonl-work
 Thanks to everyone who has improved this workshop:
 
 - [@P1LOTRX](https://github.com/P1LOTRX): clear errors for a UTF-8 BOM (#31) and for bare carriage returns (#32), released in v0.2.0.
-- [@rise11hx-cmyk](https://github.com/rise11hx-cmyk): `--max-bytes` rejected as a usage error (#41), and named messages for duplicate keys and non-finite numbers (#40).
-- [@jwalith4418-Mj](https://github.com/jwalith4418-Mj): non-object records name their JSON type without echoing the value (#47).
+- [@rise11hx-cmyk](https://github.com/rise11hx-cmyk): `--max-bytes` rejected as a usage error (#41), named messages for duplicate keys and non-finite numbers (#40), and `--report-all` (#33), released in v0.3.0.
+- [@jwalith4418-Mj](https://github.com/jwalith4418-Mj): non-object records name their JSON type without echoing the value (#47), released in v0.3.0.
 
 Want to join them? Issues labelled [good first issue](https://github.com/senanurcetin/offline-jsonl-workshop/issues?q=is%3Aopen+label%3A%22good+first+issue%22) have a reproduction and a definition of done, and questions are welcome in [Discussions](https://github.com/senanurcetin/offline-jsonl-workshop/discussions). See [CONTRIBUTING.md](CONTRIBUTING.md).
 
