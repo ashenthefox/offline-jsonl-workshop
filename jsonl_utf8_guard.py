@@ -258,6 +258,8 @@ def _report_for(source: BinaryIO, args: argparse.Namespace) -> dict[str, Any]:
 def _build_report(args: argparse.Namespace) -> dict[str, Any]:
     if args.input is None:
         return _report_for(sys.stdin.buffer, args)
+    if args.input.is_dir():
+        raise ValueError("--input is a directory, not a file")
     with args.input.open("rb") as source:
         return _report_for(source, args)
 
