@@ -663,6 +663,18 @@ class CLIExitCodeTests(unittest.TestCase):
         self.assertEqual(proc.returncode, 2)
         self.assertEqual(proc.stdout, b"")
 
+    def test_directory_input_exits_two_with_clear_message(self):
+        with tempfile.TemporaryDirectory() as directory:
+            for options in ((), ("--report-all",)):
+                with self.subTest(options=options):
+                    proc = self.run_cli("--input", directory, *options)
+                    self.assertEqual(proc.returncode, 2)
+                    self.assertEqual(proc.stdout, b"")
+                    self.assertEqual(
+                        proc.stderr.splitlines(),
+                        [b"Validation failed: --input is a directory, not a file"],
+                    )
+
     def test_non_positive_max_bytes_is_a_usage_error(self):
         for bad in ("0", "-1", "-1000"):
             with self.subTest(max_bytes=bad):
